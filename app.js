@@ -10,7 +10,7 @@ const DEFAULT_PRODUCTS = [
     category: "Uniformes",
     price: 189.90,
     description: "Uniforme táctico de alta resistencia, ideal para operaciones. Incluye camisa y pantalón.",
-    image: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400",
+    image: "https://www.santevet.es/wp-content/uploads/2024/02/gatocomuneuropeo-97.jpg",
     variants: [
       { size: "S", colors: [{ color: "Olivo", qty: 10 }, { color: "Negro", qty: 8 }] },
       { size: "M", colors: [{ color: "Olivo", qty: 15 }, { color: "Negro", qty: 12 }] },
