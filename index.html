@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Militar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="showHome()">Tienda Militar</div>
+    <nav>
+      <a href="#" onclick="showHome()">Inicio</a>
+      <a href="#" onclick="showAdminLogin()">Administrador</a>
+    </nav>
+    <div class="cart-icon" onclick="toggleCartSidebar()">
+      🛒 <span id="cart-count" class="badge">0</span>
+    </div>
+  </header>
+
+  <main id="main-content"></main>
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <h3>Carrito</h3>
+      <button onclick="toggleCartSidebar()">×</button>
+    </div>
+    <div id="cart-sidebar-items"></div>
+    <div class="sidebar-footer">
+      <p>Total: S/ <span id="sidebar-total">0.00</span></p>
+      <button onclick="showCart()">Ver carrito completo</button>
+      <button onclick="showCheckout()">Realizar compra</button>
+    </div>
+  </div>
+  <div id="overlay" class="overlay" onclick="closeAll()"></div>
+
+  <!-- Notification -->
+  <div id="notification" class="notification"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
