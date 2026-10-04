@@ -96,15 +96,15 @@ let currentCategory = null;
 let editingId = null;
 
 function loadData() {
-  const savedProducts = localStorage.getItem("tm_products");
-  products = savedProducts ? JSON.parse(savedProducts) : JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+  // Siempre carga desde el código (DEFAULT_PRODUCTS). Edita app.js y se refleja.
+  products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
   const savedCart = localStorage.getItem("tm_cart");
   cart = savedCart ? JSON.parse(savedCart) : [];
   updateCartUI();
 }
 
 function saveProducts() {
-  localStorage.setItem("tm_products", JSON.stringify(products));
+  // Fuente de verdad = código. No guarda productos en localStorage.
 }
 
 function saveCart() {
