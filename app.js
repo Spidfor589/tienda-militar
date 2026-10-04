@@ -6,7 +6,7 @@ const WA_NUMBER = "51955802712";
 const DEFAULT_PRODUCTS = [
   {
     id: 1,
-    name: "Uniforme Táctico Completo",
+    name: "Uniforme Táctico",
     category: "Uniformes",
     price: 189.90,
     description: "Uniforme táctico de alta resistencia, ideal para operaciones. Incluye camisa y pantalón.",
