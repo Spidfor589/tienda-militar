@@ -6,14 +6,20 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <title>Tienda Militar</title>
-  <link rel="stylesheet" href="styles.css?v=4">
+  <meta name="theme-color" content="#0b0c0a">
+  <title>ATLAS TÁCTICO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
+  <div class="topbar">CATÁLOGO DE EQUIPO TÁCTICO · PERSONAL MILITAR Y DE SEGURIDAD</div>
   <header>
-    <div class="logo" onclick="showHome()">Tienda Militar</div>
+    <div class="logo" onclick="showHome()">ATLAS<span>TÁCTICO</span></div>
     <nav>
       <a href="#" onclick="showHome()">Inicio</a>
+      <a href="#" onclick="showHome()">Catálogo</a>
       <a href="#" onclick="showAdminLogin()">Administrador</a>
     </nav>
     <div class="cart-icon" onclick="toggleCartSidebar()">
@@ -23,7 +29,6 @@
 
   <main id="main-content"></main>
 
-  <!-- Cart Sidebar -->
   <div id="cart-sidebar" class="sidebar">
     <div class="sidebar-header">
       <h3>Carrito</h3>
@@ -32,15 +37,13 @@
     <div id="cart-sidebar-items"></div>
     <div class="sidebar-footer">
       <p>Total: S/ <span id="sidebar-total">0.00</span></p>
-      <button onclick="showCart()">Ver carrito completo</button>
-      <button onclick="showCheckout()">Realizar compra</button>
+      <button class="btn" onclick="showCart()">Ver carrito completo</button>
+      <button class="btn btn-secondary" onclick="showCheckout()">Realizar compra</button>
     </div>
   </div>
   <div id="overlay" class="overlay" onclick="closeAll()"></div>
-
-  <!-- Notification -->
   <div id="notification" class="notification"></div>
 
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
